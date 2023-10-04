@@ -1,0 +1,47 @@
+form{
+    position: relative;
+    left: 24%;
+    padding: 100px 200px;
+    max-width: 371px;
+    min-height: 90px;
+    background-color: rgb(182, 207, 236);
+}
+
+form p{
+    text-transform: uppercase;
+    color: red;
+    text-align: center;
+   margin: 0;
+  
+
+}
+.text-box{
+   margin: 20px;
+}
+.text-box input{
+    margin-left: 16px;
+    padding-left: 5px;
+}
+.text-area{
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.text-area textarea{
+   margin-left: 10px;
+}
+.file-box{
+    margin: 20px
+}
+.file-box input{
+    margin-left: 19px;
+    padding-left: 7px;
+}
+.radio{
+    margin-left: 20px;
+}
+.checkbox{
+    margin-left: 20px;
+}
+.button{
+    text-align: center;
+}

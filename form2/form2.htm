@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./form2.css" />
+
+    <script>
+      
+      function upFile() {
+        var fileName = document.getElementById("fileInput").files[0].name;
+        var fileContent = document.getElementById("fileContent");
+        fileContent.textContent = "Selected File: " + fileName;
+      }
+
+    </script>
+  </head>
+  <body>
+    <form action="" name="f2">
+      <p>Ví dụ về tạo form</p>
+      <div class="text-box">
+        <label for="">Text box: </label>
+        <input type="text" />
+      </div>
+      <div class="text-area">
+        <label for="">Text Area: </label>
+        <textarea name="" id="" cols="21" rows="1"></textarea>
+      </div>
+      <div class="file-box">
+        <label for="">File box: </label>
+        <input type="text" placeholder="" value="" id="fileName"  onblur="upFile()"/>
+        <input type="file" id="fileInput" style="display: none;" onchange="upFile()" />
+        <button onclick="document.getElementById('fileInput').click()">Browse..</button>
+        <div id="fileContent"></div>
+      </div>
+      <div class="radio">
+        <input type="radio" />
+        <label for="">Radio button: </label>
+      </div>
+      <div class="checkbox">
+        <input type="checkbox" />
+        <label for="">Check box: </label>
+      </div>
+
+      <div class="button">
+        <button>Submit</button>
+        <button>Reset</button>
+      </div>
+    </form>
+  </body>
+</html>
